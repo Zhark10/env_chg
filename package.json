@@ -4,9 +4,12 @@
   "description": "change env conf",
   "main": "index.js",
   "scripts": {
-    "env:dev": "cat dev.env > .env",
-    "env:prod": "cat prod.env > .env"
+    "env:dev": "cat dev.env > .env && node index.js",
+    "env:prod": "cat prod.env > .env && node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
