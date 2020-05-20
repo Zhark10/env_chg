@@ -4,7 +4,8 @@
   "description": "change env conf",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "env:dev": "cat dev.env > .env",
+    "env:prod": "cat prod.env > .env"
   },
   "author": "",
   "license": "ISC"
